@@ -1,0 +1,35 @@
+{
+  "name": "Game.Tests.PlayMode",
+  "rootNamespace": "Game.Tests.PlayMode",
+  "references": [
+    "Game.Core",
+    "Game.Content",
+    "Game.Platform",
+    "Game.Net",
+    "Game.Hero",
+    "Game.Rooms",
+    "Game.Bots",
+    "Game.Tower",
+    "Game.UI",
+    "Unity.Netcode.Runtime",
+    "Unity.InputSystem",
+    "PrimeTween.Runtime",
+    "Unity.Mathematics",
+    "Unity.AI.Navigation",
+    "Unity.Splines",
+    "Unity.Cinemachine",
+    "Unity.TextMeshPro",
+    "Unity.Collections",
+    "UnityEngine.TestRunner",
+    "UnityEditor.TestRunner"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll",
+    "Newtonsoft.Json.dll"
+  ],
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "autoReferenced": false
+}

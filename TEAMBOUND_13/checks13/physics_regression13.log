@@ -1,0 +1,31 @@
+PASS Fixed gravity, stable floor and measured jump 
+PASS Movement speed independent of synthetic render cadence 
+PASS Standing capsule blocked by a 0.58 m opening 
+PASS Standing capsule passes a 0.64 m opening 
+PASS Low tunnel blocks standing, permits crouch, refuses stand-through 
+PASS 0.25 m step-up does not behave like an invisible wall 
+PASS Grip rejected while facing away 
+PASS Grip rejected at 1.20 m distance from wall 
+PASS Contact selection works on 0, 45, 90 and 135 degree walls 
+PASS Stationary hand contacts stay fixed and unsupported hangs lose energy 
+PASS Independent hand release and reach limit under movement 
+PASS Deliberate mantle succeeds only with a clear full-body path 
+PASS Mantle is refused below a low ceiling 
+PASS Visible props settle at their actual half-height 
+PASS 5.8 m plank spans two supports without a puzzle socket 
+PASS Objects receive angular momentum when impulse is off-centre 
+PASS Walking on a rotated plank uses its real tilted surface 
+PASS One static hand contact follows a moving object-local point 
+PASS Snapshots reproduce all body transforms and active contacts 
+PASS Quarry route: eastern steps can be walked without jump spam 
+PASS Survey collection is order-independent and explicit 
+PASS Equipment reset keeps owned objects in place 
+PASS Finite team tether corrects both endpoints 
+PASS Two independent players cannot walk through one another 
+PASS Ground-level handles require crouching or sufficient actual reach 
+PASS Carry, rotate, drop and throw change actual rigid transforms 
+PASS A carried object is not transmitted through a solid wall 
+PASS Anchor attachment checks range, direction and line of sight 
+PASS Reeling changes finite rope length with bounded velocity 
+PASS Freight expedition: pick up, carry through the quarry, climb stairs and deliver 
+30 passed / 0 failed

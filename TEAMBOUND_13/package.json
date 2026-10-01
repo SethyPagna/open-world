@@ -1,0 +1,18 @@
+{
+  "name": "teambound-rescue-edition",
+  "version": "13.0.0",
+  "private": true,
+  "description": "Private-room co-op browser game with one authoritative simulation",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test:rules": "node tests/mode_rules.cjs",
+    "test:physics": "node tests/physics_regression.cjs",
+    "test:routes": "node tests/playthroughs.cjs && node tests/extended_playthroughs.cjs",
+    "test:network": "node tests/network_tests.cjs",
+    "assets:install": "node src/install_rescuer13.cjs",
+    "test:character": "xvfb-run -a python checks13/browser13.py"
+  }
+}

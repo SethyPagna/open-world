@@ -1,0 +1,6 @@
+/* Extend the inspection camera and time controls; never modify a live room. */
+const toggleStudioBase13=toggleMotionLab12,updateStudioBase13=updateMotionStudio12;
+toggleMotionLab12=function(force){toggleStudioBase13(force);let s=motionStudio12;if(!s.active)return;s.rate=s.rate??1;s.paused=s.paused??false;s.focusY=s.focusY??1.05;
+ if(!$('portrait13')){let nav=$('studio12').querySelector('nav');for(let [id,label,fn]of [['portrait13','Face',()=>{s.focusY=1.64;s.pitch=0;s.distance=.60;s.yaw=.18}],['body13','Full body',()=>{s.focusY=1.05;s.pitch=.05;s.distance=2.8;s.yaw=.35}],['slow13','Slow ×0.25',()=>{s.rate=s.rate===1?.25:1;$('slow13').textContent=s.rate===1?'Slow ×0.25':'Normal speed'}],['pause13','Pause',()=>{s.paused=!s.paused;$('pause13').textContent=s.paused?'Resume':'Pause'}]]){let b=document.createElement('button');b.id=id;b.textContent=label;b.onclick=fn;nav.appendChild(b)}$('studio12').querySelector('b').textContent='RESCUE EDITION / 13';$('studio12').querySelector('p').textContent='Actual weighted mesh · procedural pose study · not motion capture or cloth simulation.';}
+};
+updateMotionStudio12=function(dt){let s=motionStudio12;if(!s.active)return;updateStudioBase13(s.paused?0:dt*(s.rate??1));renderer.camera.eye=[Math.sin(s.yaw)*s.distance,(s.focusY??1.05)+.15+s.pitch,-Math.cos(s.yaw)*s.distance];renderer.camera.target=[0,s.focusY??1.05,0];};

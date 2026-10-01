@@ -1,0 +1,13 @@
+{
+  "name": "Game.Net",
+  "rootNamespace": "Game.Net",
+  "references": [
+    "Game.Core",
+    "Game.Content",
+    "Game.Platform",
+    "Unity.Netcode.Runtime",
+    "Unity.Networking.Transport",
+    "Unity.Collections"
+  ],
+  "autoReferenced": false
+}

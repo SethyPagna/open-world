@@ -1,0 +1,9 @@
+{
+  "name": "Game.Content",
+  "rootNamespace": "Game.Content",
+  "references": [
+    "Game.Core",
+    "Unity.Netcode.Runtime"
+  ],
+  "autoReferenced": false
+}

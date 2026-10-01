@@ -1,0 +1,32 @@
+{
+  "name": "tower-game",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p .",
+    "shot": "node tools/shot.mjs",
+    "server": "node server/server.mjs",
+    "dev:shared": "vite --mode shared"
+  },
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "postprocessing": "^6.39.5",
+    "three": "^0.186.1",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/three": "^0.186.0",
+    "@types/ws": "^8.18.1",
+    "playwright": "^1.63.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1",
+    "vite-plugin-singlefile": "^2.3.3"
+  },
+  "private": true
+}

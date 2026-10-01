@@ -1,0 +1,9 @@
+{
+  "name": "Game.Platform",
+  "rootNamespace": "Game.Platform",
+  "references": [
+    "Game.Core",
+    "Game.Content"
+  ],
+  "autoReferenced": false
+}

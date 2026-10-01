@@ -1,0 +1,33 @@
+<Project>
+  <!--
+    Fast C# type-check for agents: compiles Assets/_Knotwell against Unity's reference DLLs with plain
+    `dotnet build`, without opening Unity (only one Unity process may open the project at a time).
+    It does NOT enforce asmdef boundaries or run ILPP; the Unity gate (Tools/unity_gate.mjs) is authoritative.
+  -->
+  <PropertyGroup>
+    <UnityEditorDir>C:\Program Files\Unity\Hub\Editor\6000.3.25f1\Editor</UnityEditorDir>
+    <UnityData>$(UnityEditorDir)\Data</UnityData>
+    <ProjectRoot>$(MSBuildThisFileDirectory)..\..\</ProjectRoot>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <NoStdLib>true</NoStdLib>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);CS0649;CS0169;CS0414;CS1701;CS1702</NoWarn>
+    <!-- KwSlot (passed by unity_gate.mjs as -p:KwSlot=N) gives each concurrent check its own bin/obj. -->
+    <KwSlot Condition="'$(KwSlot)' == ''">0</KwSlot>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)bin\$(KwSlot)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)obj\$(KwSlot)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <DefineConstants>UNITY_6000_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_INPUT_SYSTEM;UNITY_PIPELINE_URP;CSHARP_7_3_OR_NEWER</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(UnityData)\NetStandard\ref\2.1.0\netstandard.dll" Private="false" />
+    <Reference Include="$(ProjectRoot)Library\PackageCache\com.unity.nuget.newtonsoft-json@*\Runtime\Newtonsoft.Json.dll" Private="false" />
+    <Reference Include="$(UnityData)\Managed\UnityEngine\UnityEngine*.dll" Private="false" />
+    <Reference Include="$(ProjectRoot)Library\ScriptAssemblies\*.dll" Exclude="$(ProjectRoot)Library\ScriptAssemblies\*Editor*.dll;$(ProjectRoot)Library\ScriptAssemblies\*CodeGen*.dll;$(ProjectRoot)Library\ScriptAssemblies\*Tests*.dll;$(ProjectRoot)Library\ScriptAssemblies\*DocCode*.dll;$(ProjectRoot)Library\ScriptAssemblies\Knotwell*.dll;$(ProjectRoot)Library\ScriptAssemblies\Game.*.dll" Private="false" />
+  </ItemGroup>
+</Project>

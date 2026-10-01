@@ -1,0 +1,15 @@
+{
+  "name": "Game.Hero",
+  "rootNamespace": "Game.Hero",
+  "references": [
+    "Game.Core",
+    "Game.Content",
+    "Game.Platform",
+    "Game.Net",
+    "Unity.Netcode.Runtime",
+    "Unity.InputSystem",
+    "PrimeTween.Runtime",
+    "Unity.Mathematics"
+  ],
+  "autoReferenced": false
+}

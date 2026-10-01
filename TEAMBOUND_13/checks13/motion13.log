@@ -1,0 +1,8 @@
+PASS Stationary soles use support-local anchors, not a sine-wave gait {"driftMetres":0,"ankleTargetResiduals":[2.7755575615628914e-17,2.7755575615628914e-17]}
+PASS Level-ground jog keeps the stance ankle within 1 cm and skin palettes finite {"distinctSupportAnchors":15,"maxStanceResidualMetres":1.6653345369377348e-16}
+PASS Support-local stance anchors follow a translated platform {"supportTranslationErrorMetres":0}
+PASS Visual posing leaves authoritative player and prop state unchanged {"physicsStateUnchanged":true}
+PASS Both hand contact targets are reflected by actual distal finger bones {"fingerTargetResidualMetres":[5.5245042196096925e-8,5.5245042196096925e-8]}
+PASS One hand releases without detaching the other {"handError":[0,null]}
+PASS Crouch and an airborne transition keep all vertices transformable {"transformedJacketYRange":[0.7813443094352159,1.5161151885986328]}
+PASS Skin weights are normalized and every inverse bind reconstructs identity {"inverseBindError":0,"joints":48}

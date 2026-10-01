@@ -1,0 +1,142 @@
+{
+  "scope": "Chromium SwiftShader actual v13 HTML. Ingestion tests use synthetic triangles, not the remote real human. No real-human gameplay render was performed in this local environment.",
+  "checks": [
+    {
+      "test": "V13 boot and shaders",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "test": "Prepared asset controls mounted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Portrait inspection camera",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Slow-motion inspection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Inspection pause freezes pose time",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Keyboard jump remains functional",
+      "passed": true,
+      "detail": {
+        "before": [
+          -1.23,
+          0.015000000000000053,
+          12
+        ],
+        "after": [
+          -1.23,
+          0.36186250000000003,
+          12
+        ]
+      }
+    },
+    {
+      "test": "First person has skinned body and hides head",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Valid character data accepted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject joint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject nonfinite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject externalTexture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject truncated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject scale",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reject classification",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Asset commit does not change physics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Three imported parts and normal maps committed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Imported FPS head is hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Reload does not accumulate duplicate imported meshes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Failed texture decode retains working model",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Save offline keeps client and data package",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Embedded package reloads without remote downloads",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "test": "Imported GLB retains skeleton, textures, and normal maps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "No browser exceptions",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "pageErrors": []
+}

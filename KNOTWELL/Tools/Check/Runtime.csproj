@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Runtime code only: everything under Assets/_Knotwell except Editor and Tests folders. -->
+  <PropertyGroup>
+    <AssemblyName>KnotwellCheck.Runtime</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets\_Knotwell\**\*.cs" Exclude="$(ProjectRoot)Assets\_Knotwell\**\Editor\**;$(ProjectRoot)Assets\_Knotwell\**\Tests\**" />
+  </ItemGroup>
+</Project>

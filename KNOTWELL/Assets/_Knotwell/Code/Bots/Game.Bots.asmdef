@@ -1,0 +1,16 @@
+{
+  "name": "Game.Bots",
+  "rootNamespace": "Game.Bots",
+  "references": [
+    "Game.Core",
+    "Game.Content",
+    "Game.Platform",
+    "Game.Net",
+    "Game.Hero",
+    "Game.Rooms",
+    "Unity.Netcode.Runtime",
+    "Unity.AI.Navigation",
+    "Unity.Mathematics"
+  ],
+  "autoReferenced": false
+}

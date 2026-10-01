@@ -1,0 +1,11 @@
+{
+  "name": "Game.Core",
+  "rootNamespace": "Game.Core",
+  "references": [],
+  "autoReferenced": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll"
+  ],
+  "noEngineReferences": true
+}

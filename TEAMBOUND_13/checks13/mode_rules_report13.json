@@ -1,0 +1,186 @@
+{
+  "scope": "Targeted rule fixtures. Positions/resources explicitly arranged to isolate each rule; end-to-end completion is tested separately.",
+  "build": "e98f0731e3b5f2c4e659",
+  "tests": [
+    {
+      "name": "Input validation rejects nonfinite movement and unknown actions",
+      "status": "PASS",
+      "details": {
+        "x": 0,
+        "z": -1,
+        "actions": [
+          "jump",
+          "cast0"
+        ]
+      }
+    },
+    {
+      "name": "All eight advertised modes snapshot/load preserve canonical entities, resources and geometry",
+      "status": "PASS",
+      "details": [
+        {
+          "mode": "SUMMIT",
+          "players": 4,
+          "shared": null
+        },
+        {
+          "mode": "CHAINED",
+          "players": 4,
+          "shared": null
+        },
+        {
+          "mode": "BODY",
+          "players": 4,
+          "shared": "shared-body"
+        },
+        {
+          "mode": "ECHO",
+          "players": 4,
+          "shared": null
+        },
+        {
+          "mode": "RIVER",
+          "players": 4,
+          "shared": "team-raft"
+        },
+        {
+          "mode": "DIVE",
+          "players": 4,
+          "shared": null
+        },
+        {
+          "mode": "DELIVERY",
+          "players": 4,
+          "shared": null
+        },
+        {
+          "mode": "TOWER",
+          "players": 4,
+          "shared": null
+        }
+      ]
+    },
+    {
+      "name": "Summit requires the whole connected party, not just the leader",
+      "status": "PASS",
+      "details": "Leader alone did not finish; both at beacon did."
+    },
+    {
+      "name": "Disconnected players no longer collide, tether, or block expedition completion",
+      "status": "PASS",
+      "details": {
+        "completed": true,
+        "active": [
+          0,
+          10.515,
+          -39
+        ],
+        "disconnected": [
+          50,
+          0,
+          50
+        ]
+      }
+    },
+    {
+      "name": "One Body conflicting movement cancels predictably; idle members do not reduce drive",
+      "status": "PASS",
+      "details": {
+        "opposingCancelled": true,
+        "oneSeatDrive": 1,
+        "body": "shared-body"
+      }
+    },
+    {
+      "name": "Different simultaneous spellcasters trigger one shared misfire; repeating same-player cast obeys cooldown",
+      "status": "PASS",
+      "details": {
+        "clashes": 1,
+        "cooldownBlockedDuplicate": true
+      }
+    },
+    {
+      "name": "Echo exit stays closed until all four wards are activated",
+      "status": "PASS",
+      "details": {
+        "requiredWards": 4
+      }
+    },
+    {
+      "name": "Raft bailing, repairs and burst consume or change shared resources exactly once",
+      "status": "PASS",
+      "details": {
+        "water": 23,
+        "hull": 72,
+        "kits": 1
+      }
+    },
+    {
+      "name": "Raft recovery preserves party identity and uses the last secured dock",
+      "status": "PASS",
+      "details": {
+        "dock": 1,
+        "position": [
+          0,
+          0.38,
+          -33
+        ],
+        "ids": [
+          "p0",
+          "p1"
+        ]
+      }
+    },
+    {
+      "name": "Dive air sharing conserves oxygen and requires proximity",
+      "status": "PASS",
+      "details": {
+        "donor": 55,
+        "recipient": 45,
+        "total": 100
+      }
+    },
+    {
+      "name": "Dive air bells refill; open water drains; team cannot exit without relics",
+      "status": "PASS",
+      "details": {
+        "oxygen": 68.35,
+        "threeRelicsRequired": true
+      }
+    },
+    {
+      "name": "Summit case must be placed, intact, with all players at goal",
+      "status": "PASS",
+      "details": {
+        "placed": true,
+        "integrity": 72
+      }
+    },
+    {
+      "name": "Tower placement consumes shared timber; other players cannot undo your structure",
+      "status": "PASS",
+      "details": {
+        "buildCost": 1,
+        "refund": 1,
+        "ownershipEnforced": true
+      }
+    },
+    {
+      "name": "Tower rejects unsupported sky aiming and exhausted supply, instead of inventing platforms",
+      "status": "PASS",
+      "details": {
+        "unsupportedRejected": true,
+        "noTimberRejected": true
+      }
+    },
+    {
+      "name": "Tower victory requires both construction and all participants on the beacon",
+      "status": "PASS",
+      "details": {
+        "minimumPieces": 6
+      }
+    }
+  ],
+  "passed": 15,
+  "failed": 0
+}

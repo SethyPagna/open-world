@@ -1,0 +1,13 @@
+PASS Four independent WebSocket clients get identical canonical player IDs, slots and seats [["d36ba246193b02c92fb3a4fa",0,"front"],["931981b397ed5ec2c461897a",1,"back"],["862f6d2d9681c2f99f4a6bb9",2,"left"],["0812bd63334e78938af6c192",3,"right"]]
+PASS Loaded barrier then one room-owned body starts all four clients on the same run {"run":"c5d7238bf0e23404c625305e","entity":"shared-body"}
+PASS Every One Body seat alone can move; occupied idle seats do not dilute movement [{"seat":"Front","metres":2.08958},{"seat":"Back","metres":2.1425},{"seat":"Left","metres":2.09334},{"seat":"Right","metres":2.09334}]
+PASS Canonical world hash/positions agree across all four at common server ticks {"identicalSnapshots":100,"allPositionsIdentical":true}
+PASS Held movement times out and stops when commands stop, without replayed actions {"driftAfterTimeout":0}
+PASS Reconnect restores same ID/slot/seat; four roster entries, not a duplicated fifth {"id":"862f6d2d9681c2f99f4a6bb9","slot":2,"sameIdentity":true,"roster":4,"observedMovementMs":466}
+PASS Guest cannot steal occupied seat, change mode, or return everyone to lobby ["That position belongs to Front. Choose a free position.","Only the host can change the mode, in the lobby.","Only the host can return the whole party. Use Leave room to leave alone."]
+PASS Host returns the whole party, switches to river and restarts a fresh fenced run {"oldRun":"c5d7238bf0e23404c625305e","newRun":"6f1ccda54d0c06424c2d573f","oldRunRejected":true}
+PASS Any paddler moves the one shared raft and all four stay aboard {"raft":[3.22339,0.36245,3.48977],"players":[[2.62206,0.66245,3.94944],[3.64866,0.66245,4.11591],[2.79813,0.66245,2.86362],[3.82472,0.66245,3.03009]]}
+PASS Late rejoin after explicit leave gets the current raft and canonical membership {"tick":118,"raft":[3.38846,0.35937,3.20425],"roster":4}
+PASS Wrong game build is explicitly rejected, not admitted to a conflicting room "Version mismatch. Open the game from this matching v13 server; do not mix old HTML files or servers."
+PASS A host disconnect migrates control, without changing the world or shared entity {"newHost":"931981b397ed5ec2c461897a","run":"6f1ccda54d0c06424c2d573f","raft":"team-raft"}
+12 PASS 0 FAIL

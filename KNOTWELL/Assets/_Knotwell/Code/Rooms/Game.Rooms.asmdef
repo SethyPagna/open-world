@@ -1,0 +1,17 @@
+{
+  "name": "Game.Rooms",
+  "rootNamespace": "Game.Rooms",
+  "references": [
+    "Game.Core",
+    "Game.Content",
+    "Game.Platform",
+    "Game.Net",
+    "Game.Hero",
+    "Unity.Netcode.Runtime",
+    "Unity.AI.Navigation",
+    "Unity.Splines",
+    "PrimeTween.Runtime",
+    "Unity.Mathematics"
+  ],
+  "autoReferenced": false
+}

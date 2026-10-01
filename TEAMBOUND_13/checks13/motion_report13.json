@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Stationary soles use support-local anchors, not a sine-wave gait",
+    "status": "PASS",
+    "detail": {
+      "driftMetres": 0,
+      "ankleTargetResiduals": [
+        2.7755575615628914e-17,
+        2.7755575615628914e-17
+      ]
+    }
+  },
+  {
+    "name": "Level-ground jog keeps the stance ankle within 1 cm and skin palettes finite",
+    "status": "PASS",
+    "detail": {
+      "distinctSupportAnchors": 15,
+      "maxStanceResidualMetres": 1.6653345369377348e-16
+    }
+  },
+  {
+    "name": "Support-local stance anchors follow a translated platform",
+    "status": "PASS",
+    "detail": {
+      "supportTranslationErrorMetres": 0
+    }
+  },
+  {
+    "name": "Visual posing leaves authoritative player and prop state unchanged",
+    "status": "PASS",
+    "detail": {
+      "physicsStateUnchanged": true
+    }
+  },
+  {
+    "name": "Both hand contact targets are reflected by actual distal finger bones",
+    "status": "PASS",
+    "detail": {
+      "fingerTargetResidualMetres": [
+        5.5245042196096925e-8,
+        5.5245042196096925e-8
+      ]
+    }
+  },
+  {
+    "name": "One hand releases without detaching the other",
+    "status": "PASS",
+    "detail": {
+      "handError": [
+        0,
+        null
+      ]
+    }
+  },
+  {
+    "name": "Crouch and an airborne transition keep all vertices transformable",
+    "status": "PASS",
+    "detail": {
+      "transformedJacketYRange": [
+        0.7813443094352159,
+        1.5161151885986328
+      ]
+    }
+  },
+  {
+    "name": "Skin weights are normalized and every inverse bind reconstructs identity",
+    "status": "PASS",
+    "detail": {
+      "inverseBindError": 0,
+      "joints": 48
+    }
+  }
+]

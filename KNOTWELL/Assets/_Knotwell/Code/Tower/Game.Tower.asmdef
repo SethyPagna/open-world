@@ -1,0 +1,17 @@
+{
+  "name": "Game.Tower",
+  "rootNamespace": "Game.Tower",
+  "references": [
+    "Game.Core",
+    "Game.Content",
+    "Game.Platform",
+    "Game.Net",
+    "Game.Hero",
+    "Game.Rooms",
+    "Game.Bots",
+    "Unity.Netcode.Runtime",
+    "Unity.Cinemachine",
+    "PrimeTween.Runtime"
+  ],
+  "autoReferenced": false
+}

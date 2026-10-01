@@ -1,0 +1,5 @@
+tools/.locks/
+node_modules/
+dist/
+dist-single/
+shots/

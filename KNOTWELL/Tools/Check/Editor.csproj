@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Everything (runtime + Editor + Tests) with UNITY_EDITOR defined and editor/test references. -->
+  <PropertyGroup>
+    <AssemblyName>KnotwellCheck.Editor</AssemblyName>
+    <DefineConstants>$(DefineConstants);UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_INCLUDE_TESTS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets\_Knotwell\**\*.cs" />
+    <Reference Include="$(UnityData)\Managed\UnityEditor*.dll" Private="false" />
+    <Reference Include="$(UnityData)\Managed\UnityEngine\UnityEditor*.dll" Private="false" />
+    <Reference Include="$(ProjectRoot)Library\ScriptAssemblies\*Editor*.dll" Exclude="$(ProjectRoot)Library\ScriptAssemblies\*DocCode*.dll;$(ProjectRoot)Library\ScriptAssemblies\Knotwell*.dll;$(ProjectRoot)Library\ScriptAssemblies\Game.*.dll" Private="false" />
+    <Reference Include="$(ProjectRoot)Library\PackageCache\com.unity.ext.nunit*\net40\unity-custom\nunit.framework.dll" Private="false" />
+    <!-- nunit.framework targets net40, so it needs the mscorlib/System facades. -->
+    <Reference Include="$(UnityData)\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll" Private="false" />
+    <Reference Include="$(UnityData)\NetStandard\compat\2.1.0\shims\netfx\System.dll" Private="false" />
+    <Reference Include="$(UnityData)\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll" Private="false" />
+    <Reference Include="$(ProjectRoot)Library\ScriptAssemblies\UnityEngine.TestRunner.dll" Private="false" Condition="Exists('$(ProjectRoot)Library\ScriptAssemblies\UnityEngine.TestRunner.dll')" />
+    <Reference Include="$(ProjectRoot)Library\ScriptAssemblies\UnityEditor.TestRunner.dll" Private="false" Condition="Exists('$(ProjectRoot)Library\ScriptAssemblies\UnityEditor.TestRunner.dll')" />
+  </ItemGroup>
+</Project>

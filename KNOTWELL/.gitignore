@@ -1,0 +1,40 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+# IDE
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+# OS
+.DS_Store
+Thumbs.db
+# Agent scratch
+/Screenshots/
+/TestResults/
+!/Tools/Check/*.csproj
+!/Tools/CoreTests/*.csproj
+/Tools/Check/bin/
+/Tools/Check/obj/
+/Tools/CoreTests/bin/
+/Tools/CoreTests/obj/
+/Tools/.locks/
+/Artifacts/
+/Builds/
+mono_crash.*

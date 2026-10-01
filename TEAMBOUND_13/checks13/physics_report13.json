@@ -1,0 +1,528 @@
+{
+  "suiteOrigin": "Lab 09 core regression, executed against current v10 lab_sim.js",
+  "scope": "Headless simulation tests; isolated fixtures unless explicitly named route playthrough",
+  "tests": [
+    {
+      "name": "Fixed gravity, stable floor and measured jump",
+      "status": "PASS",
+      "ms": 26.84,
+      "details": {
+        "apex_m": 0.7988500000000001,
+        "airborne_s": 1.1166666666666667,
+        "landing_y": 0.015000000000000024
+      }
+    },
+    {
+      "name": "Movement speed independent of synthetic render cadence",
+      "status": "PASS",
+      "ms": 125.74,
+      "details": [
+        [
+          0,
+          0.014999999999999935,
+          -9.30125
+        ],
+        [
+          0,
+          0.014999999999999935,
+          -9.30125
+        ],
+        [
+          0,
+          0.014999999999999935,
+          -9.30125
+        ]
+      ]
+    },
+    {
+      "name": "Standing capsule blocked by a 0.58 m opening",
+      "status": "PASS",
+      "ms": 59.53,
+      "details": [
+        -0.0002001618869115676,
+        0.014999999999999996,
+        0.5529987362189919
+      ]
+    },
+    {
+      "name": "Standing capsule passes a 0.64 m opening",
+      "status": "PASS",
+      "ms": 20.86,
+      "details": [
+        0,
+        0.015000000000000074,
+        -6.10124999999999
+      ]
+    },
+    {
+      "name": "Low tunnel blocks standing, permits crouch, refuses stand-through",
+      "status": "PASS",
+      "ms": 14.95,
+      "details": [
+        0,
+        0.015000000000000074,
+        1.4776388888888872
+      ]
+    },
+    {
+      "name": "0.25 m step-up does not behave like an invisible wall",
+      "status": "PASS",
+      "ms": 7.41,
+      "details": [
+        0,
+        0.265,
+        0.032083333333332464
+      ]
+    },
+    {
+      "name": "Grip rejected while facing away",
+      "status": "PASS",
+      "ms": 7.25,
+      "details": {
+        "grips": 0
+      }
+    },
+    {
+      "name": "Grip rejected at 1.20 m distance from wall",
+      "status": "PASS",
+      "ms": 6.21,
+      "details": {
+        "distance_m": 1.2
+      }
+    },
+    {
+      "name": "Contact selection works on 0, 45, 90 and 135 degree walls",
+      "status": "PASS",
+      "ms": 3.49,
+      "details": [
+        {
+          "degrees": 0,
+          "contacts": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "degrees": 45,
+          "contacts": [
+            [
+              0.7071067811865476,
+              0,
+              0.7071067811865475
+            ],
+            [
+              0.7071067811865476,
+              0,
+              0.7071067811865475
+            ]
+          ]
+        },
+        {
+          "degrees": 90,
+          "contacts": [
+            [
+              1,
+              0,
+              2.220446049250313e-16
+            ],
+            [
+              1,
+              0,
+              2.220446049250313e-16
+            ]
+          ]
+        },
+        {
+          "degrees": 135,
+          "contacts": [
+            [
+              0.7071067811865477,
+              0,
+              -0.7071067811865475
+            ],
+            [
+              0.7071067811865477,
+              0,
+              -0.7071067811865475
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stationary hand contacts stay fixed and unsupported hangs lose energy",
+      "status": "PASS",
+      "ms": 13.22,
+      "details": {
+        "energy_before": 99.77500000000003,
+        "after": 90.7750000000014
+      }
+    },
+    {
+      "name": "Independent hand release and reach limit under movement",
+      "status": "PASS",
+      "ms": 7.89,
+      "details": {
+        "reach_m": 0.6555682204674772,
+        "height_m": 0.4883729330805315
+      }
+    },
+    {
+      "name": "Deliberate mantle succeeds only with a clear full-body path",
+      "status": "PASS",
+      "ms": 42.23,
+      "details": {
+        "hang_y": 2.3590934327508766,
+        "finish": [
+          -0.255,
+          3.215,
+          -0.15000000000000002
+        ]
+      }
+    },
+    {
+      "name": "Mantle is refused below a low ceiling",
+      "status": "PASS",
+      "ms": 30.47,
+      "details": {
+        "mantles": 0
+      }
+    },
+    {
+      "name": "Visible props settle at their actual half-height",
+      "status": "PASS",
+      "ms": 54,
+      "details": {
+        "position": [
+          2,
+          0.3989964944928087,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "5.8 m plank spans two supports without a puzzle socket",
+      "status": "PASS",
+      "ms": 456.33,
+      "details": {
+        "position": [
+          0.0002872169105668297,
+          1.0795780421271497,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          -0.00011638966901119249,
+          0.9999999932267226
+        ]
+      }
+    },
+    {
+      "name": "Objects receive angular momentum when impulse is off-centre",
+      "status": "PASS",
+      "ms": 8.79,
+      "details": {
+        "position": [
+          2.72575139600138,
+          1.0226864782992493,
+          0
+        ],
+        "orientation": [
+          -0.1168647311692973,
+          0.350594193507892,
+          -0.631069548314206,
+          0.6820392739995131
+        ]
+      }
+    },
+    {
+      "name": "Walking on a rotated plank uses its real tilted surface",
+      "status": "PASS",
+      "ms": 25.37,
+      "details": [
+        0,
+        0.015000000000000032,
+        -5.949470575268966
+      ]
+    },
+    {
+      "name": "One static hand contact follows a moving object-local point",
+      "status": "PASS",
+      "ms": 0.63,
+      "details": {
+        "first": [
+          0.3,
+          2.2,
+          0.5
+        ],
+        "second": [
+          1.8710274693551907,
+          2.2,
+          0.3437049943088474
+        ]
+      }
+    },
+    {
+      "name": "Snapshots reproduce all body transforms and active contacts",
+      "status": "PASS",
+      "ms": 4.74,
+      "details": {
+        "tick": 30,
+        "contacts": 2
+      }
+    },
+    {
+      "name": "Quarry route: eastern steps can be walked without jump spam",
+      "status": "PASS",
+      "ms": 2468.55,
+      "details": {
+        "finish": [
+          23,
+          5.675000000000001,
+          -23.577083333333654
+        ],
+        "steps": 44
+      }
+    },
+    {
+      "name": "Survey collection is order-independent and explicit",
+      "status": "PASS",
+      "ms": 1.35,
+      "details": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Equipment reset keeps owned objects in place",
+      "status": "PASS",
+      "ms": 0.21,
+      "details": [
+        10,
+        4,
+        2
+      ]
+    },
+    {
+      "name": "Finite team tether corrects both endpoints",
+      "status": "PASS",
+      "ms": 9.38,
+      "details": {
+        "a": [
+          -1.9835622222222224,
+          0.015000000000000041,
+          0
+        ],
+        "b": [
+          1.9835622222222224,
+          0.015000000000000041,
+          0
+        ],
+        "length": 3.967124444444445
+      }
+    },
+    {
+      "name": "Two independent players cannot walk through one another",
+      "status": "PASS",
+      "ms": 27.44,
+      "details": {
+        "a": [
+          -0.2950136165577342,
+          0.015000000000000032,
+          0
+        ],
+        "b": [
+          0.2950136165577342,
+          0.015000000000000032,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Ground-level handles require crouching or sufficient actual reach",
+      "status": "PASS",
+      "ms": 49.74,
+      "details": {
+        "state": "case",
+        "reach": 0.5917128161655443
+      }
+    },
+    {
+      "name": "Carry, rotate, drop and throw change actual rigid transforms",
+      "status": "PASS",
+      "ms": 114.42,
+      "details": {
+        "carried": [
+          -0.007169036068093203,
+          0.5347118418511649,
+          2.205449098954026
+        ],
+        "rotation": [
+          -0.1208705045436228,
+          0.5111954057378042,
+          0.004644460997936151,
+          0.8509101052790303
+        ],
+        "throwVelocity": [
+          -0.17729505850772276,
+          0.05261409448432851,
+          -11.242432262988622
+        ],
+        "landed": [
+          0.2892443765531527,
+          0.6715514654377792,
+          -5.433458813419105
+        ]
+      }
+    },
+    {
+      "name": "A carried object is not transmitted through a solid wall",
+      "status": "PASS",
+      "ms": 209.39,
+      "details": {
+        "object": [
+          0.520281324466638,
+          0.594037205034196,
+          0.7687907554557907
+        ],
+        "player": [
+          0,
+          0.015000000000000019,
+          0.49500000000000005
+        ],
+        "carry": "box"
+      }
+    },
+    {
+      "name": "Anchor attachment checks range, direction and line of sight",
+      "status": "PASS",
+      "ms": 0.53,
+      "details": {
+        "deployed_length": 5.76485606548121
+      }
+    },
+    {
+      "name": "Reeling changes finite rope length with bounded velocity",
+      "status": "PASS",
+      "ms": 14.88,
+      "details": {
+        "initial": 4.821531665319293,
+        "final": 1.6715316653192804,
+        "body": [
+          0,
+          2.310397559748438,
+          -0.32514911361738447
+        ],
+        "speed": 0.14131341809880255
+      }
+    },
+    {
+      "name": "Freight expedition: pick up, carry through the quarry, climb stairs and deliver",
+      "status": "PASS",
+      "ms": 10001.08,
+      "details": {
+        "completed": true,
+        "route": [
+          {
+            "target": [
+              2.4,
+              9.75
+            ],
+            "feet": [
+              2.372961003670164,
+              0.015000000000000005,
+              9.769715934823846
+            ],
+            "ticks": 64
+          },
+          {
+            "target": [
+              18,
+              12
+            ],
+            "feet": [
+              17.96248020892161,
+              0.015000000000000133,
+              11.994645192080823
+            ],
+            "ticks": 318
+          },
+          {
+            "target": [
+              18,
+              -0.15
+            ],
+            "feet": [
+              17.999824795211335,
+              0.014999999999999973,
+              -0.09328859694693943
+            ],
+            "ticks": 247
+          },
+          {
+            "target": [
+              23,
+              -0.15
+            ],
+            "feet": [
+              23.72433741357067,
+              -3.9850000000000003,
+              -0.1582154184541415
+            ],
+            "ticks": 105
+          },
+          {
+            "target": [
+              23,
+              -23.2
+            ],
+            "feet": [
+              23.002044396472947,
+              5.675000000000001,
+              -23.13496602240011
+            ],
+            "ticks": 461
+          },
+          {
+            "target": [
+              14,
+              -23.4
+            ],
+            "feet": [
+              14.075879211575526,
+              6.015,
+              -23.397765993180755
+            ],
+            "ticks": 185
+          }
+        ],
+        "time_s": 32.49999999999944,
+        "recoveries": 0,
+        "jumps": 0,
+        "cargo": [
+          14.663981434118817,
+          6.245605845848526,
+          -24.17150553192316
+        ]
+      }
+    }
+  ],
+  "passed": 30,
+  "failed": 0,
+  "build": "e98f0731e3b5f2c4e659"
+}

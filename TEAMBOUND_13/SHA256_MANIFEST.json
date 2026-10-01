@@ -1,0 +1,242 @@
+{
+  "package.json": {
+    "bytes": 625,
+    "sha256": "727eb0a1bafe34669576e48b6b7fe080af0610b94012e5a1f356560cd379565c"
+  },
+  "NEXT_ASSET_ACCEPTANCE.md": {
+    "bytes": 1065,
+    "sha256": "75ba0706144927e45af0d5da5512e9a38a750be0101a1e6fa6cb9cfc0cb218e3"
+  },
+  "server.js": {
+    "bytes": 16256,
+    "sha256": "4beef4e11fb4ed8475ac66b28ac59b579546b06855e9da3f43bacfddbbda55d7"
+  },
+  "INSTALL_RESCUER_MAC_LINUX.sh": {
+    "bytes": 70,
+    "sha256": "f09acf9c06c1f6097c7abde766c7f0e58a73c4a50ed72b1a1f163700951bac6f"
+  },
+  "ROCKETBOX_MIT_LICENSE.txt": {
+    "bytes": 1063,
+    "sha256": "1d97f7fa8bbdef385def4f6874eb1b6ff9a5c77b7aedee20bb1854a0f8a6273c"
+  },
+  "VALIDATION.md": {
+    "bytes": 4804,
+    "sha256": "bae0b5ae5d5197e3d3d36a0937abb36981b3c40b3c288168d42b070960dadcc3"
+  },
+  "teambound_rescue_v13.html": {
+    "bytes": 1796077,
+    "sha256": "4eb024082414d7029bf7bfe6e9eb376730e2982d3ceb9ca14c5757368772c60d"
+  },
+  "BUILD.json": {
+    "bytes": 97,
+    "sha256": "c034ff30e2b297631b0e1cb94e1664cebc45504ed40b8a96c30d1a753c63c843"
+  },
+  "INSTALL_RESCUER_WINDOWS.bat": {
+    "bytes": 282,
+    "sha256": "d3136960050e5cdaab964e298a4d85864cffe14067c69949299a571293fc364e"
+  },
+  "README.md": {
+    "bytes": 5845,
+    "sha256": "3dfe76d26fd1721bd376d61af5cdfc0652e302e9d867c32a6c4cad91458c228f"
+  },
+  "START_MAC_LINUX.sh": {
+    "bytes": 424,
+    "sha256": "67398fc36b2954db918d8e975efc5b74ddf16bcc9729f4c53440cc0f3c6c474a"
+  },
+  "ASSET_PROVENANCE.md": {
+    "bytes": 1727,
+    "sha256": "cc18885d9d78968f2edb4587c9bf78515526d321704580c59897e4a551848cc1"
+  },
+  "START_WINDOWS.bat": {
+    "bytes": 673,
+    "sha256": "768c24ca557ecf83bf71b310eefd540782d0ab2dd3c69f12c1d7ad33c0ebb8ed"
+  },
+  "REAL_CHARACTER_DOWNLOAD.html": {
+    "bytes": 2950,
+    "sha256": "d9b74cf28dae0961d325d01b9e2884a4afdb663a1391db790a6b46aeaafb17e7"
+  },
+  "tests/playthroughs.cjs": {
+    "bytes": 5042,
+    "sha256": "82008e4f7e3173ff0e2484ced3dfb149c4a106d55e2a19c327c1d3e2ea2c33ed"
+  },
+  "tests/load_sim.cjs": {
+    "bytes": 591,
+    "sha256": "2e76f0c733de05a429d6dee76a935654188ff8be39aa7b7b32de77e8a475ac25"
+  },
+  "tests/check12.py": {
+    "bytes": 5755,
+    "sha256": "9ecf1c818a40b0222cea74e62237ec57077bc55d118ad153cb94b1999aa842cb"
+  },
+  "tests/network_tests.cjs": {
+    "bytes": 9649,
+    "sha256": "b1571fd8f3d6634207de1d97fbe25df74c8c622b7d42a73d3a9df15441a4e374"
+  },
+  "tests/asset_pipeline12.py": {
+    "bytes": 4300,
+    "sha256": "e340f4d9ee65a64a43a63141832c0969d985898f8f631c93d248e5233174f5c5"
+  },
+  "tests/physics_regression.cjs": {
+    "bytes": 13048,
+    "sha256": "75c7223d51bd5054094c75b4f86d7d99f8e177aafe0850ffe5c7d611f86f03dd"
+  },
+  "tests/latency_proxy.cjs": {
+    "bytes": 726,
+    "sha256": "ac0ce21b2482f1b9ee6887b8720d89b0b88efefbb62761f95c2ca9f63ac6cc17"
+  },
+  "tests/mode_render12.py": {
+    "bytes": 1391,
+    "sha256": "6f520ddce2bdb138836683b0a9ebd1dbb0fae8b4b05e7409c8c15c14fca04255"
+  },
+  "tests/mode_rules.cjs": {
+    "bytes": 7460,
+    "sha256": "66af98849fb9a7f813d2ccf89e4cc02366b492cd777dd9917a6bdce4ff9a2859"
+  },
+  "tests/extended_playthroughs.cjs": {
+    "bytes": 4993,
+    "sha256": "5d980bb591ba46068f329caed632f2c00970ebc68a108f672174c8b83eaec716"
+  },
+  "tests/motion_checks.cjs": {
+    "bytes": 4885,
+    "sha256": "baa14577fb7a782d8c4f69adb8518897162a4f302bde7053b51467b775149e20"
+  },
+  "src/skin_texture.py": {
+    "bytes": 1146,
+    "sha256": "bcf1bd3b204d574a984357086e3be60ee5bb4cf9edd9ce845a5b6281f6399274"
+  },
+  "src/human13.js": {
+    "bytes": 11679,
+    "sha256": "459fe0b6ae8b62dee187a88c4dabbf7610a261e040d445d964ebb7ae74eae6a0"
+  },
+  "src/character12.js": {
+    "bytes": 20689,
+    "sha256": "693703b627217a5f6c3bb09d919d79bf39c8ca71aecbbac8df797d41301dc06f"
+  },
+  "src/client_bundled.js": {
+    "bytes": 1770107,
+    "sha256": "72ce141098a67fd5ce716ec2469fe0117e97f49d3aab23d9149b90b674ba7898"
+  },
+  "src/install_character_assets.js": {
+    "bytes": 2061,
+    "sha256": "813cf6b92057760df4790bdfb4f9541319fafc6c2d4c70d7c9c60936ed5b5959"
+  },
+  "src/protocol10.js": {
+    "bytes": 853,
+    "sha256": "f52b74986ba0bb3f982d9e7315f62940f6394fd13e118c8e316bc3b189e63d91"
+  },
+  "src/motion12.js": {
+    "bytes": 7501,
+    "sha256": "603048feb539fe637578e77f424e34f2febbea21426a566317ac51af422972a4"
+  },
+  "src/base_v11.html": {
+    "bytes": 1521503,
+    "sha256": "c4d7ed77a4b5d98e8593e3aaf59c45e4bc32f82af2b163f03d13de43c028c52f"
+  },
+  "src/lab_sim.js": {
+    "bytes": 29740,
+    "sha256": "7794a00570b88f0f29a7082024b0b4edee3d89eb239c08c6c9ddf69d542df3c9"
+  },
+  "src/studio13.js": {
+    "bytes": 1377,
+    "sha256": "85a25ae62467198a85ba54bafbba4344f81f4bd467b60ee693b219c38ee47d40"
+  },
+  "src/party_sim.js": {
+    "bytes": 28620,
+    "sha256": "c1f1eb993afd89900077896b9b1132d9229b73ec1a3bd6f6f4bb66d664c3e849"
+  },
+  "src/build12.py": {
+    "bytes": 11254,
+    "sha256": "3c359353d2568f8f9e8a9d6945e7369b7d7d1c866592df5445893d55cfca1795"
+  },
+  "src/rocketbox12.js": {
+    "bytes": 20807,
+    "sha256": "7241539f372e5f75ff1faf9e9d252c48b96e4d6febd2dfd2e7aeb0d7fca6c40e"
+  },
+  "src/install_rescuer13.cjs": {
+    "bytes": 2261,
+    "sha256": "2a9888758cfd2274c766caa60d18a621dfd1a85c486dc0833e0142b3eef9af61"
+  },
+  "src/build13.py": {
+    "bytes": 2538,
+    "sha256": "90a980a5f4baaba396bda726fe199ef8465b80c27ae00a7a6e4e0ac42291891e"
+  },
+  "src/studio12.js": {
+    "bytes": 10535,
+    "sha256": "267e5a621f58a3d0e5114410d01a14ec46af714898b28d07f7776c31064a0d37"
+  },
+  "src/engine.js": {
+    "bytes": 22963,
+    "sha256": "ebffb423f39e655544708c3202d77616e5842b9e128748c6965a874cc9871eb7"
+  },
+  "src/spatial10.js": {
+    "bytes": 2614,
+    "sha256": "e4ed96c719350738bd58c46954b14603fb867258b92f0239a8e0b1ea8dddca06"
+  },
+  "public/index.html": {
+    "bytes": 1796077,
+    "sha256": "4eb024082414d7029bf7bfe6e9eb376730e2982d3ceb9ca14c5757368772c60d"
+  },
+  "checks13/motion_report13.json": {
+    "bytes": 1670,
+    "sha256": "3fe4e4e591e0ffcc1a92811151deeb7818f6a2a5a22ccb50194f4734f4483e7e"
+  },
+  "checks13/network13.log": {
+    "bytes": 2224,
+    "sha256": "ec5c0021ece97b05deb0ae9f706da7aa9e772726715cef14b7ca79d422b6ac22"
+  },
+  "checks13/browser13.py": {
+    "bytes": 6786,
+    "sha256": "c9ab31488d9b34f33f3467cb8ba55f1bf87e0f5c7375752e30af6864a6bfcf8c"
+  },
+  "checks13/network_report13.json": {
+    "bytes": 4847,
+    "sha256": "8fe32245963941835a10b0d55a94ae05e1eb8e755a3b810786677740fdb77be0"
+  },
+  "checks13/physics_regression13.log": {
+    "bytes": 1842,
+    "sha256": "b9baba2358c45219d511fa0b739d750536104d28fc2ae3a13b45d99f6a3520a4"
+  },
+  "checks13/mode_rules13.log": {
+    "bytes": 2193,
+    "sha256": "3b849c746b9a861967ccb09b1336cf7bace7ac91776c5502fdc228e1c28e438f"
+  },
+  "checks13/menu13.png": {
+    "bytes": 761098,
+    "sha256": "c6d91fa4ce8436776fe7b20c255b21692249f862beb2e6a02f5c434d593a6267"
+  },
+  "checks13/explorer_fallback13.png": {
+    "bytes": 708688,
+    "sha256": "f5ae4e2b0cee6609f7abd07eaaeb75f5271b0eb1ec92fe762cc3f952ebc21a54"
+  },
+  "checks13/browser_report13.json": {
+    "bytes": 2998,
+    "sha256": "507dc672001e5ff446501d5c62572a09db654b6cbb69bc29d257c965a272acb9"
+  },
+  "checks13/motion13.log": {
+    "bytes": 1000,
+    "sha256": "30971574a556aae969a1cb16326628bf856f150e38ffe4af4db2eda633fb4c6a"
+  },
+  "checks13/unchanged_authority.json": {
+    "bytes": 703,
+    "sha256": "9e8ba39e77fa6ce51a2c1f09dfed579e11835b24b01d82bd37cddc026328e158"
+  },
+  "checks13/physics_report13.json": {
+    "bytes": 11539,
+    "sha256": "f9daef7af6307c38bea34e4b338bc59bec6dbcb02d71f6ffcca856b968f57de7"
+  },
+  "checks13/mode_rules_report13.json": {
+    "bytes": 4440,
+    "sha256": "86ed3b408b08b2ea8d62d3ca1d4d16b141eddd6bda047df448f33ec407f16ab4"
+  },
+  "checks13/fps_fallback13.png": {
+    "bytes": 679134,
+    "sha256": "714d0da3767bc39c7890780baa78fc09feb5fc916509dbb5c3a85b064022e140"
+  },
+  "assets/teambound_explorer_rigged.glb": {
+    "bytes": 4261376,
+    "sha256": "4eda5059e5d5ff8fc8ac64ae56bdf541e4063416468adafb56771d239f7435f8"
+  },
+  "assets/skin_albedo.jpg": {
+    "bytes": 156304,
+    "sha256": "7d2f547f965e223ad1c015aecd1509e4de16c736d3fdcd3c07844ab1af6e0944"
+  }
+}
